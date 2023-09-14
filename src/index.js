@@ -1,5 +1,6 @@
 import "@/style.css";
 import { createApp } from 'vue';
+import 'regenerator-runtime/runtime';
 import RootComponent from '@/components/RootComponent/index.vue';
 import router from './router' // <---
 // Mount function to start up the app
