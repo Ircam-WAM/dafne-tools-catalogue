@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
-.test {
-  background-color: yellow;
+a {
+  text-decoration: none;
+  color: #ed728f;
+}
+
+a:visited {
+  color: #ed728f;
+}
+
+a:hover {
+  color: #976fe0;
+}
+
+a:active {
+  color: #ed728f;
+}
+
+a:link, a:visited {
+  text-decoration: none;
 }
