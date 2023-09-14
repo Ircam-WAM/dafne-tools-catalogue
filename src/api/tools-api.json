@@ -1,0 +1,23 @@
+{
+  "tools_api":[
+      {
+         "name": "WebPD",
+         "description": "WebPd is a highly modular web audio programming toolkit inspired by Pure Data",
+         "image_thumbnail": "https://raw.githubusercontent.com/sebpiq/WebPd/main/webpd.png",
+         "author": "Sebastien Piquemal",
+         "version": "1.0.0",
+         "download_url": "",
+         "app_url": "https://sebpiq.github.io/WebPd_website/",
+         "git_repository_url": "https://github.com/sebpiq/WebPd"
+      },
+      {
+         "name": "RAVE",
+         "description": "Official implementation of RAVE: A variational autoencoder for fast and high-quality neural audio synthesis",
+         "image_thumbnail": "https://github.com/acids-ircam/RAVE/raw/master/docs/rave.png",
+         "author": "Antoine Caillon",
+         "version": "2.2.2",
+         "download_url": "https://github.com/acids-ircam/RAVE/tags",
+         "git_repository": "https://github.com/acids-ircam/RAVE"
+      }
+   ]
+}

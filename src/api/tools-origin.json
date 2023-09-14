@@ -1,0 +1,14 @@
+{
+  "tools_origin":[
+      {
+         "name": "WebPD",
+         "api_url": "api/tools-api.json",
+         "forum_api_url": "https://forum.ircam.fr/api/projects/731/"
+      },
+      {
+         "name": "RAVE",
+         "api_url": "api/tools-api.json",
+         "forum_api_url": "https://forum.ircam.fr/api/projects/487/"
+      }
+   ]
+}
