@@ -1,14 +1,20 @@
-import Component1 from "@/components/Component1/index.vue";
-import Component2 from "@/components/Component2/index.vue";
-import jwtDecode from 'jwt-decode'
+import toolsApiEndpoints from '@/api/tools-origin.json';
+import ToolComponent from "@/components/ToolComponent/index.vue";
+import jwtDecode from 'jwt-decode';
 
 export default {
   components: {
-    Component1,
-    Component2,
+    ToolComponent,
   },
 
   data() {
+    const tools = []
+
+    const toolsEndpoints = toolsApiEndpoints["tools_origin"]
+    for (let i = 0; i < toolsEndpoints.length; i++) {
+        tools.push(toolsEndpoints[i]);
+    }
+
     let token = localStorage.getItem('token');
     let decode = null;
     if (token) {
@@ -18,6 +24,7 @@ export default {
 
     }
     return {
+      tools: tools,
       user: decode?.email,
       token: token
     }

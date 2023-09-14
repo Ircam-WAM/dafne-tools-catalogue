@@ -1,12 +1,13 @@
 <template>
-  <h1 :class="$style.appTitle">SubVue App</h1>
-  <div id="nav">
-    <router-link to="/component1">component1</router-link> |
-    <router-link to="/component2">component2</router-link>
-  </div>
+  <router-link to="/"><h1 :class="$style.appTitle">DAFNE+ Tools Catalogue</h1></router-link>
+  <!-- <div id="nav">
+    <template v-for="tool in tools">
+      <router-link :to="'/tool/' + tool.name">{{ tool.name }}</router-link> |
+    </template>
+  </div> -->
   <router-view />
-  <div style="overflow-wrap: break-word;">token: {{ token }}</div>
-  <div>user: {{ user }}</div>
+  <!-- <div style="overflow-wrap: break-word;">token: {{ token }}</div>
+  <div>user: {{ user }}</div> -->
 </template>
 
 <style src="./index.css" module></style>
