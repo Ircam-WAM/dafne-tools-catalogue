@@ -20,9 +20,9 @@ export default async function useToolsApi () {
     for (let j = 0; j < toolsApi.length; j++) {
         if (toolsEndpoints[i].name === toolsApi[j].name) {
             tool.value = toolsApi[j]
+            api.value.push(tool.value)
         }
     }
-    api.value.push(tool.value)
   }
 
   return { api }
