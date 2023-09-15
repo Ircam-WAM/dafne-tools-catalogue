@@ -1,16 +1,32 @@
+@font-face {
+  font-family: "Mulish";
+  src:
+    local("Mulish"),
+    url("./static/font/Mulish-Regular.ttf");
+}
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Mulish";
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff7ff;
+}
+
+body > :first-child{
+  height: 100%;
+}
+
 a {
   text-decoration: none;
   color: #ed728f;
-}
-
-a:visited {
-  color: #ed728f;
+  transition: all 200ms;
 }
 
 a:hover {
@@ -23,4 +39,8 @@ a:active {
 
 a:link, a:visited {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
