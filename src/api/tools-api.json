@@ -7,8 +7,8 @@
          "author": "Sebastien Piquemal",
          "version": "1.0.0",
          "download_url": "",
-         "app_url": "https://sebpiq.github.io/WebPd_website/",
-         "git_repository_url": "https://github.com/sebpiq/WebPd"
+         "git_repository_url": "https://github.com/sebpiq/WebPd",
+         "app_url": "https://sebpiq.github.io/WebPd_website/"
       },
       {
          "name": "RAVE",
@@ -17,7 +17,68 @@
          "author": "Antoine Caillon",
          "version": "2.2.2",
          "download_url": "https://github.com/acids-ircam/RAVE/tags",
-         "git_repository": "https://github.com/acids-ircam/RAVE"
+         "git_repository_url": "https://github.com/acids-ircam/RAVE",
+         "app_url": ""
+      },
+      {
+         "name": "nn~",
+         "description": "A max / Pd external for real-time AI audio processing.",
+         "image_thumbnail": "https://forum.ircam.fr/media/uploads/images/Projects/thumbs/nn_logo.jpg/nn_logo-384x157.jpg",
+         "author": "Antoine Caillon",
+         "version": "1.5.5",
+         "download_url": "https://github.com/acids-ircam/nn_tilde/releases",
+         "git_repository_url": "https://github.com/acids-ircam/nn_tilde",
+         "app_url": ""
+      },
+      {
+         "name": "Dicy2",
+         "description": "\"Dicy2 for Max\" is a package for Max implementing interactive agents using machine-learning to generate musical sequences that can be integrated into musical situations ranging from the production of structured material within a compositional process to the design of autonomous agents for improvised interaction. Check also our plugin for Ableton Live !",
+         "image_thumbnail": "https://forum.ircam.fr/media/uploads/images/Projects/thumbs/logo-dicy2_max_2_rect.png/logo-dicy2_max_2_rect-384x157.png",
+         "author": "Jérôme Nika, Augustin Muller, Joakim Borg, Matthew Ostrowski",
+         "version": "2.0.0",
+         "download_url": "https://forum.ircam.fr/projects/detail/dicy2/",
+         "git_repository_url": "https://git.forum.ircam.fr/jnika/dicy2/",
+         "app_url": ""
+      },
+      {
+         "name": "Spat",
+         "description": "Spat is a software suite for spatialization of sound signals in real-time intended for musical creation, postproduction, and live performances.",
+         "image_thumbnail": "https://forum.ircam.fr/media/uploads/Softwares/Spat/spat_oper.png",
+         "author": "Thibaut Carpentier, Markus Noisternig, Olivier Warusfel",
+         "version": "5.3.1",
+         "download_url": "https://forum.ircam.fr/projects/detail/spat/",
+         "git_repository_url": "https://git.forum.ircam.fr/beller/spat",
+         "app_url": ""
+      },
+      {
+         "name": "Soundworks",
+         "description": "Full-stack JavaScript framework for distributed WebAudio and multimedia applications.",
+         "image_thumbnail": "https://github.com/collective-soundworks/soundworks/raw/main/assets/logo-200x200.png",
+         "author": "Benjamin Matuszewski",
+         "version": "4.0.0-alpha.9",
+         "download_url": "https://forum.ircam.fr/projects/detail/spat/",
+         "git_repository_url": "https://github.com/collective-soundworks/soundworks/tags",
+         "app_url": ""
+      },
+      {
+         "name": "CoMo Elements",
+         "description": "Mobile webapp to create collectively sound-movement interaction",
+         "image_thumbnail": "https://forum.ircam.fr/media/uploads/images/Projects/controller.jpg",
+         "author": "Ircam ISMM",
+         "version": "3.2.1",
+         "download_url": "https://github.com/ircam-cosima/elements/tags",
+         "git_repository_url": "https://github.com/ircam-cosima/elements",
+         "app_url": ""
+      },
+      {
+         "name": "Style Transfer",
+         "description": "Style Transfer is a technique in computer vision and graphics that involves generating a new image by combining the content of one image with the style of another image.",
+         "image_thumbnail": "",
+         "author": "",
+         "version": "",
+         "download_url": "",
+         "git_repository_url": "",
+         "app_url": ""
       }
    ]
 }
