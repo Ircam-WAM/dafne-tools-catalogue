@@ -1,9 +1,12 @@
 <template>
-    <div class="home__container">
-        <ul class="home__tools-list">
-            <li v-for="tool in tools" class="home__tool-card">
-                <router-link :to="'/tool/' + tool.name">
-                    <h3 class="home__tool-card-title">{{ tool.name }}</h3>
+    <div :class="$style.homeContainer">
+        <ul :class="$style.toolsList">
+            <li v-for="tool in tools" :class="$style.toolCard">
+                <router-link :to="'/tool/' + tool.name" :class="$style.toolCardLink">
+                    <img :class="$style.toolCardImage" :src="tool.image_thumbnail" />
+                    <h3 :class="$style.toolCardTitle">{{ tool.name }}</h3>
+                    <p :class="$style.toolCardDescription">{{ tool.description }}</p>
+                    <button :class="$style.toolCardButton">➜ See more</button>
                 </router-link>
             </li>
         </ul>

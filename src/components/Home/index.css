@@ -3,3 +3,97 @@ iframe {
     height: 800px;
     display: block;
 }
+
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.toolsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 150px;
+    padding: 0;
+}
+
+.toolCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 2rem;
+    padding: 1rem;
+    width: 100%;
+    width: 20rem;
+    height: 25rem;
+    position: relative;
+    background-color: #fdfdfd;
+    border-radius: 0;
+    box-shadow: 0px 0px 5px 0px #d0d0d0;
+    transition: all 200ms;
+}
+
+.toolCard:hover {
+    cursor: pointer;
+    color: #000;
+    box-shadow: 0px 1px 10px 2px #976fe0;
+}
+
+.toolCardLink {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #000 !important;
+}
+
+.toolCardImage {
+    width: 100%;
+    height: 4rem;
+    max-width: 15rem;
+    max-height: 4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    object-fit: contain;
+}
+
+.toolCardTitle {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.toolCardDescription {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.toolCardButton {
+    width: 8rem;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0;
+    background-color: #7d36ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    appearance: none;
+    transition: all 200ms;
+}
+
+.toolCardButton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
