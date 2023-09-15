@@ -1,4 +1,4 @@
-# dagne-tools-catalogue
+# dafne-tools-catalogue
 
 Tools catalogue for the DAFNE+ platform
 
