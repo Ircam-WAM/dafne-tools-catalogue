@@ -27,7 +27,9 @@
     "webpack-dev-server": "4.7.3"
   },
   "dependencies": {
+    "js-base64": "^3.7.5",
     "jwt-decode": "^3.1.2",
+    "marked": "^9.0.0",
     "vue": "3.2.29",
     "vue-router": "^4.0.13"
   }
