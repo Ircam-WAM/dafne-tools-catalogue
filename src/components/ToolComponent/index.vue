@@ -32,6 +32,9 @@
                     scrolling="yes"
                 >
                 </iframe>
+                <div v-if="selectedTool.git_repository_url" :class="$style.toolGitContent">
+                    <div v-if="gitRepositoryReadme" v-html="gitRepositoryReadme" :class="$style.toolGitReadme" />
+                </div>
             </div>
         </template>
         <template v-else>
@@ -46,6 +49,8 @@
 import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import useToolsApi from '../../api/useToolsApi'
+import { decode } from 'js-base64'
+import { marked } from 'marked'
 
 const props = defineProps({
   name: String
@@ -66,6 +71,38 @@ function getToolByName (toolName) {
     }
 }
 
+const gitRepositoryReadme = ref()
+
+async function fetchGithubRepositoryApi (repositoryUrl) {
+            const response = await fetch(repositoryUrl, {
+                // headers: {
+                //     "Content-Type": "application/json",
+                // }
+            })
+            const body = await response.json()
+            console.log(body)
+}
+
+async function fetchGithubRepositoryReadme (repositoryUrl) {
+    gitRepositoryReadme.value = ''
+
+    if (repositoryUrl && repositoryUrl.includes('github')) {
+        const repoAuthor = repositoryUrl.split('/')[3]
+        const repoName = repositoryUrl.split('/')[4]
+        let url = 'https://api.github.com/repos/' + repoAuthor + '/' + repoName + '/readme'
+
+        const response = await fetch(url, {
+            // headers: {
+            //     "Content-Type": "application/json",
+            // }
+        })
+        const body = await response.json()
+        const content = marked.parse((decode(body.content)))
+        gitRepositoryReadme.value = content
+        // console.log('README: ', gitRepositoryReadme.value)
+    }
+}
+
 watch(() => route.params.name, async newName => {
     // update tool data from api on navigation change
         // console.log('ROUTE NAME: ', newName)
@@ -78,13 +115,17 @@ onMounted(async () => {
     // console.log(route)
     console.log('TOOL COMPONENT MOUNTED')
 
+    // parse tools
     const { api } = await useToolsApi()
     tools.value = api.value
     console.log('TOOLS: ', tools.value)
-
+    // get selected tool
     selectedTool.value = getToolByName(props.name)
     console.log('SELECTED TOOL: ', selectedTool.value)
-        // await fetchGithubRepositoryApi("https://api.github.com/repos/acids-ircam/RAVE")
-        // await fetchGithubRepositoryReadme("https://raw.githubusercontent.com/acids-ircam/RAVE/master/README.md")
+
+    if (selectedTool.value && selectedTool.value.git_repository_url) {
+        // fetch git repository
+        await fetchGithubRepositoryReadme(selectedTool.value.git_repository_url)
+    }
 })
 </script>
