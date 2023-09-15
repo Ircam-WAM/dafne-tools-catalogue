@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --mode=development",
+    "start": "webpack serve --mode=development --hot",
+    "dev": "webpack serve --mode=development --open --config webpack.config.js --hot",
     "build": "webpack --mode=production --progress",
     "dist-clean": "rm -fr dist/*"
   },
@@ -27,6 +28,7 @@
     "webpack-dev-server": "4.7.3"
   },
   "dependencies": {
+    "dompurify": "^3.0.5",
     "js-base64": "^3.7.5",
     "jwt-decode": "^3.1.2",
     "marked": "^9.0.0",

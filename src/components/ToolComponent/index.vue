@@ -51,6 +51,7 @@ import { useRoute } from 'vue-router'
 import useToolsApi from '../../api/useToolsApi'
 import { decode } from 'js-base64'
 import { marked } from 'marked'
+import * as DOMPurify from 'dompurify'
 
 const props = defineProps({
   name: String
@@ -97,7 +98,7 @@ async function fetchGithubRepositoryReadme (repositoryUrl) {
             // }
         })
         const body = await response.json()
-        const content = marked.parse((decode(body.content)))
+        const content = DOMPurify.sanitize(marked.parse((decode(body.content))))
         gitRepositoryReadme.value = content
         // console.log('README: ', gitRepositoryReadme.value)
     }
