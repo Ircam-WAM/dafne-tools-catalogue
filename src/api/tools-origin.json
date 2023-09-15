@@ -9,6 +9,36 @@
          "name": "RAVE",
          "api_url": "api/tools-api.json",
          "forum_api_url": "https://forum.ircam.fr/api/projects/487/"
+      },
+      {
+         "name": "nn~",
+         "api_url": "api/tools-api.json",
+         "forum_api_url": "https://forum.ircam.fr/api/projects/492/"
+      },
+      {
+         "name": "Dicy2",
+         "api_url": "api/tools-api.json",
+         "forum_api_url": "https://forum.ircam.fr/api/projects/717/"
+      },
+      {
+         "name": "Spat",
+         "api_url": "api/tools-api.json",
+         "forum_api_url": "https://forum.ircam.fr/api/projects/22/"
+      },
+      {
+         "name": "Soundworks",
+         "api_url": "api/tools-api.json",
+         "forum_api_url": "https://forum.ircam.fr/api/projects/604/"
+      },
+      {
+         "name": "CoMo Elements",
+         "api_url": "api/tools-api.json",
+         "forum_api_url": "https://forum.ircam.fr/api/projects/20/"
+      },
+      {
+         "name": "Style Transfer",
+         "api_url": "",
+         "forum_api_url": ""
       }
    ]
 }
