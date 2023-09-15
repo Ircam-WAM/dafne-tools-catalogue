@@ -84,5 +84,7 @@ onMounted(async () => {
 
     selectedTool.value = getToolByName(props.name)
     console.log('SELECTED TOOL: ', selectedTool.value)
+        // await fetchGithubRepositoryApi("https://api.github.com/repos/acids-ircam/RAVE")
+        // await fetchGithubRepositoryReadme("https://raw.githubusercontent.com/acids-ircam/RAVE/master/README.md")
 })
 </script>
