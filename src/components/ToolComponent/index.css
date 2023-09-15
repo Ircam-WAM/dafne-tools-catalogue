@@ -1,5 +1,127 @@
-iframe {
-    width: 1000px;
+.backButton {
+    width: 8rem;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    position: relative;
+    top: 83px;
+    z-index: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #7d36ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    appearance: none;
+    transition: all 200ms;
+}
+
+.backButton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.toolContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 67px;
+}
+
+.toolHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.toolContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.toolMetadata {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.toolMetadata:not(:last-child) {
+    border-right: 2px solid #7d36ff;
+}
+
+.toolImage {
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.toolName {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.toolDescription {
+    width: 80%;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+.toolAuthor {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.toolVersion {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.toolLink {
+    margin: 0 auto;
+}
+
+.toolButton {
+    width: 8rem;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #7d36ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    appearance: none;
+    transition: all 200ms;
+}
+
+.toolButton:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.toolIframe {
+    width: 1400px;
     height: 1000px;
     display: block;
+    border: none;
 }
