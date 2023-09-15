@@ -1,5 +1,10 @@
 <template>
-  <router-link to="/"><h1 :class="$style.appTitle">DAFNE+ Tools Catalogue</h1></router-link>
+  <div :class="$style.header">
+    <router-link to="/" :class="$style.headerLink">
+      <img :class="$style.headerIcon" src="../../static/img/DAFNE_Icon.png" alt="icon" />
+      <h1 :class="$style.headerTitle">DAFNE+ Tools Catalogue</h1>
+    </router-link>
+  </div>
   <!-- <div id="nav">
     <template v-for="tool in tools">
       <router-link :to="'/tool/' + tool.name">{{ tool.name }}</router-link> |

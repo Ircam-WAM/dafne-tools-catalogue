@@ -1,3 +1,35 @@
-.appTitle {
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: #fbfbfb;
+  box-shadow: 0 -20px 20px 15px #ffacff;
+}
+
+.headerLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.headerIcon {
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  float: left;
+}
+
+.headerTitle {
+  margin-left: 1rem;
+  margin-bottom: 0;
   text-decoration: none;
 }
