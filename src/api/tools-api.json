@@ -8,6 +8,7 @@
          "version": "1.0.0",
          "download_url": "",
          "git_repository_url": "https://github.com/sebpiq/WebPd",
+         "git_vendor": "github",
          "app_url": "https://sebpiq.github.io/WebPd_website/"
       },
       {
@@ -18,6 +19,7 @@
          "version": "2.2.2",
          "download_url": "https://github.com/acids-ircam/RAVE/tags",
          "git_repository_url": "https://github.com/acids-ircam/RAVE",
+         "git_vendor": "github",
          "app_url": ""
       },
       {
@@ -28,6 +30,7 @@
          "version": "1.5.5",
          "download_url": "https://github.com/acids-ircam/nn_tilde/releases",
          "git_repository_url": "https://github.com/acids-ircam/nn_tilde",
+         "git_vendor": "github",
          "app_url": ""
       },
       {
@@ -38,6 +41,7 @@
          "version": "2.0.0",
          "download_url": "https://forum.ircam.fr/projects/detail/dicy2/",
          "git_repository_url": "https://git.forum.ircam.fr/jnika/dicy2/",
+         "git_vendor": "gitlab",
          "app_url": ""
       },
       {
@@ -48,6 +52,7 @@
          "version": "5.3.1",
          "download_url": "https://forum.ircam.fr/projects/detail/spat/",
          "git_repository_url": "https://git.forum.ircam.fr/beller/spat",
+         "git_vendor": "gitlab",
          "app_url": ""
       },
       {
@@ -58,6 +63,7 @@
          "version": "4.0.0-alpha.9",
          "download_url": "https://forum.ircam.fr/projects/detail/spat/",
          "git_repository_url": "https://github.com/collective-soundworks/soundworks/tags",
+         "git_vendor": "github",
          "app_url": ""
       },
       {
@@ -68,6 +74,7 @@
          "version": "3.2.1",
          "download_url": "https://github.com/ircam-cosima/elements/tags",
          "git_repository_url": "https://github.com/ircam-cosima/elements",
+         "git_vendor": "github",
          "app_url": ""
       },
       {
@@ -78,6 +85,7 @@
          "version": "",
          "download_url": "",
          "git_repository_url": "",
+         "git_vendor": "",
          "app_url": ""
       }
    ]
