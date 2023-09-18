@@ -32,7 +32,7 @@
       },
       {
          "name": "Dicy2",
-         "description": "\"Dicy2 for Max\" is a package for Max implementing interactive agents using machine-learning to generate musical sequences that can be integrated into musical situations ranging from the production of structured material within a compositional process to the design of autonomous agents for improvised interaction. Check also our plugin for Ableton Live !",
+         "description": "\"Dicy2 for Max\" is a package for Max implementing interactive agents using machine-learning to generate musical sequences that can be integrated into musical situations ranging from the production of structured material within a compositional process to the design of autonomous agents for improvised interaction.",
          "image_thumbnail": "https://forum.ircam.fr/media/uploads/images/Projects/thumbs/logo-dicy2_max_2_rect.png/logo-dicy2_max_2_rect-384x157.png",
          "author": "Jérôme Nika, Augustin Muller, Joakim Borg, Matthew Ostrowski",
          "version": "2.0.0",
