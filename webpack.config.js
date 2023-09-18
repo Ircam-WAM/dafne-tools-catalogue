@@ -31,6 +31,7 @@ module.exports = (env, argv) => {
       port: 8082,
       allowedHosts: 'all',
       historyApiFallback: true,
+      hot: true,
     },
     plugins: [
       new HtmlWebpackPlugin(),
