@@ -22,7 +22,8 @@ module.exports = (env, argv) => {
     resolve: {
       alias: {
         "@": src
-      }
+      },
+      extensions: ['*', '.js', '.ts'],
     },
     mode: argv.mode,
     devServer: {
@@ -67,6 +68,9 @@ module.exports = (env, argv) => {
         test: /\.js$/,
         loader: "babel-loader",
         exclude: /node_modules/
+      }, {
+        test: /\.tsx?$/,
+        loader: 'ts-loader'
       }, {
         test: /\.(png|jpe?g|gif|webm|mp4|svg)$/,
         loader: "file-loader",
