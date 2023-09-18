@@ -187,3 +187,11 @@
     max-width: 100%;
     margin-top: 0.5rem;
 }
+
+.toolGitReadme a svg {
+    margin-right: 0.5rem;
+}
+
+.toolGitReadme a img {
+    margin-bottom: 1rem;
+}

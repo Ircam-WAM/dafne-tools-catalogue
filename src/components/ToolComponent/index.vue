@@ -49,16 +49,13 @@
 import { ref, watch, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import useToolsApi from '../../api/useToolsApi'
-import { decode } from 'js-base64'
-import { marked } from 'marked'
-import * as DOMPurify from 'dompurify'
+import { Repository } from '../../libs/git-interface/git-interface'
 
 const props = defineProps({
   name: String
 })
 
 const route = useRoute()
-
 const tools = ref([])
 const selectedTool = ref()
 
@@ -72,37 +69,8 @@ function getToolByName (toolName) {
     }
 }
 
+const repository = ref()
 const gitRepositoryReadme = ref()
-
-async function fetchGithubRepositoryApi (repositoryUrl) {
-            const response = await fetch(repositoryUrl, {
-                // headers: {
-                //     "Content-Type": "application/json",
-                // }
-            })
-            const body = await response.json()
-            console.log(body)
-}
-
-async function fetchGithubRepositoryReadme (repositoryUrl) {
-    gitRepositoryReadme.value = ''
-
-    if (repositoryUrl && repositoryUrl.includes('github')) {
-        const repoAuthor = repositoryUrl.split('/')[3]
-        const repoName = repositoryUrl.split('/')[4]
-        let url = 'https://api.github.com/repos/' + repoAuthor + '/' + repoName + '/readme'
-
-        const response = await fetch(url, {
-            // headers: {
-            //     "Content-Type": "application/json",
-            // }
-        })
-        const body = await response.json()
-        const content = DOMPurify.sanitize(marked.parse((decode(body.content))))
-        gitRepositoryReadme.value = content
-        // console.log('README: ', gitRepositoryReadme.value)
-    }
-}
 
 watch(() => route.params.name, async newName => {
     // update tool data from api on navigation change
@@ -124,9 +92,38 @@ onMounted(async () => {
     selectedTool.value = getToolByName(props.name)
     console.log('SELECTED TOOL: ', selectedTool.value)
 
-    if (selectedTool.value && selectedTool.value.git_repository_url) {
+    if (selectedTool.value && selectedTool.value.git_repository_url && selectedTool.value.git_vendor) {
         // fetch git repository
-        await fetchGithubRepositoryReadme(selectedTool.value.git_repository_url)
+        // await fetchGithubRepositoryApi("https://api.github.com/repos/acids-ircam/RAVE")
+        // await fetchGithubRepositoryReadme("https://raw.githubusercontent.com/acids-ircam/RAVE/master/README.md")
+        // gitRepositoryReadme.value = await fetchGithubRepositoryReadme(selectedTool.value.git_repository_url)
+
+        repository.value = new Repository(selectedTool.value.git_repository_url, selectedTool.git_vendor)
+        if (repository.value) {
+            await repository.value.init()
+            console.log('REPOSITORY: ', repository.value)
+
+            const repositoryApi = await repository.value.getRepositoryApi()
+            console.log('REPOSITORY API: ', repositoryApi)
+
+            const repositoryInstance = await repository.value.getRepositoryInstance()
+            console.log('REPOSITORY INSTANCE: ', repositoryInstance)
+
+            const user = await repository.value.getUser()
+            console.log('USER: ', user)
+
+            const username = await repository.value.getUsername()
+            console.log('USERNAME: ', username)
+
+            gitRepositoryReadme.value = await repository.value.getReadme()
+            // console.log('README: ', gitRepositoryReadme.value)
+
+            const releases = await repository.value.getReleases()
+            console.log('RELEASES: ', releases)
+
+            const tags = await repository.value.getTags()
+            console.log('TAGS: ', tags)
+        }
     }
 })
 </script>
