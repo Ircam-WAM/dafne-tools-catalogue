@@ -1,0 +1,50 @@
+openapi: 3.0.3
+info:
+  title: DAFNEToolsCatalogue
+  description: Tools catalogue for the DAFNE+ platform
+  version: 0.0.1
+paths:
+  /tools:
+    get:
+      description: List all tools
+      responses:
+        '200':
+          description: Successfully fetched all tools from DAFNEToolsCatalogue
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    description:
+                      type: string
+                    image_thumbnail:
+                      type: string
+                    author:
+                      type: string
+                    version:
+                      type: string
+                    download_url:
+                      type: string
+                    git_repository_url:
+                      type: string
+                    git_vendor:
+                      type: string
+                    app_url:
+                      type: string
+                  example:
+                    name: WebPD
+                    description: >-
+                      WebPd is a highly modular web audio programming toolkit
+                      inspired by Pure Data
+                    image_thumbnail: >-
+                      https://raw.githubusercontent.com/sebpiq/WebPd/main/webpd.png
+                    author: Sebastien Piquemal
+                    version: 1.0.0
+                    download_url: ''
+                    git_repository_url: https://github.com/sebpiq/WebPd
+                    git_vendor: github
+                    app_url: https://sebpiq.github.io/WebPd_website/
