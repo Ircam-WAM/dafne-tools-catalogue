@@ -24,6 +24,7 @@ module.exports = (env, argv) => {
         "@": src
       },
       extensions: ['*', '.js', '.ts'],
+      fallback: { 'https': false }
     },
     mode: argv.mode,
     devServer: {
