@@ -16,12 +16,50 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background-color: #fff7ff;
+  background-color: #110427;
+  color: #fff;
 }
 
-body > :first-child{
+body > :first-child {
   height: 100%;
 }
+
+.backgroundColor {
+  transform: scale(20);
+}
+
+/* body > :last-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body > :last-child > :first-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #4c02cc;
+}
+
+body > :last-child > :last-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+} */
 
 a {
   text-decoration: none;
