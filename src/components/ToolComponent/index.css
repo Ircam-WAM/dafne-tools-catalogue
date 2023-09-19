@@ -1,3 +1,14 @@
+/* Container */
+
+.toolContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 67px;
+    height: 100%;
+}
+
+/* Header */
+
 .backButton {
     width: 8rem;
     height: 4rem;
@@ -5,12 +16,13 @@
     margin-top: auto;
     margin-bottom: 1rem;
     position: relative;
-    top: 83px;
+    top: 90px;
     z-index: 0;
     border: none;
     border-radius: 0;
-    background-color: #7d36ff;
+    background-color: #38009d;
     color: #fff;
+    box-shadow: 0px 1px 10px 2px #38009d;
     font-size: 1rem;
     font-weight: bold;
     appearance: none;
@@ -22,30 +34,17 @@
     opacity: 0.8;
 }
 
-.toolContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 67px;
-    height: 100%;
-}
-
 .toolHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0 auto;
     padding: 1rem;
-    width: 100%;
+    width: 80%;
 }
 
-.toolContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0 auto;
-    margin-top: 1rem;
-}
+/* Metadata */
 
 .toolMetadata {
     display: flex;
@@ -105,6 +104,7 @@
 
 .toolLink {
     margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .toolButton {
@@ -115,8 +115,9 @@
     margin-bottom: 0;
     border: none;
     border-radius: 0;
-    background-color: #7d36ff;
+    background-color: #38009d;
     color: #fff;
+    box-shadow: 0px 1px 10px 2px #38009d;
     font-size: 1rem;
     font-weight: bold;
     appearance: none;
@@ -128,6 +129,17 @@
     opacity: 0.8;
 }
 
+/* Content */
+
+.toolContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
 .toolIframe {
     width: 1400px;
     height: 1000px;
@@ -136,7 +148,67 @@
     margin: 0 auto;
 }
 
-.toolGitContent {
+/* Git */
+
+.toolGitRepositoryContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 85%;
+    min-width: 85%;
+    max-width: 85%;
+    position: relative;
+    left: 80px;
+    font-size: 20px;
+}
+
+.toolGitRepositoryContent b {
+    margin-right: 1rem;
+}
+
+.toolGitRepositoryContent a {
+    display: flex;
+}
+
+.toolGitRepositoryContent svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    fill: #ff3c68;
+    color: #ff3c68;
+}
+
+.toolGitRepositoryContent section {
+    display: flex;
+    padding: 1rem;
+    width: 45%;
+    border-left: 2px solid #7d36ff;
+    border-right: 2px solid #7d36ff;
+    border-bottom: 2px solid #7d36ff;
+    overflow: hidden;
+}
+
+.toolGitRepositoryContent section:first-child {
+    border-top: 2px solid #7d36ff;
+}
+
+.toolGitRepositoryContent p {
+    margin: 0;
+}
+
+
+.toolGitRepositoryContent section ul {
+    padding-left: 0;
+}
+
+.toolGitRepositoryContent section ul li {
+    display: flex;
+}
+
+.toolGitReadmeContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -144,6 +216,7 @@
     margin: 0 auto;
     margin-top: 1rem;
     padding: 1rem;
+    max-width: 80%;
 }
 
 .toolGitReadme {
@@ -152,6 +225,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 auto;
+    margin-top: 1rem;
     padding: 1rem;
 }
 
@@ -163,6 +237,9 @@
 .toolGitReadme pre {
     padding: 1rem;
     background-color: #ffdcff;
+    color: #38009d;
+    max-width: 60%;
+    font-weight: bold;
 }
 
 .toolGitReadme table th {
@@ -179,17 +256,21 @@
 }
 
 .toolGitReadme a {
-    color: #7d36ff;
+    color: #ff5285;
     font-weight: bold;
+    text-shadow: #ff5285 0 0 4px;
 }
 
 .toolGitReadme img {
-    max-width: 100%;
+    max-width: 50% !important;
+    margin: 0 auto;
     margin-top: 0.5rem;
 }
 
 .toolGitReadme a svg {
     margin-right: 0.5rem;
+    fill: #ff3c68;
+    color: #ff3c68;
 }
 
 .toolGitReadme a img {
