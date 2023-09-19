@@ -40,7 +40,7 @@
          "author": "Jérôme Nika, Augustin Muller, Joakim Borg, Matthew Ostrowski",
          "version": "2.0.0",
          "download_url": "https://forum.ircam.fr/projects/detail/dicy2/",
-         "git_repository_url": "https://git.forum.ircam.fr/jnika/dicy2/",
+         "git_repository_url": "https://gitlab.com/gIIm/flow-reverb",
          "git_vendor": "gitlab",
          "app_url": ""
       },
@@ -61,8 +61,8 @@
          "image_thumbnail": "https://github.com/collective-soundworks/soundworks/raw/main/assets/logo-200x200.png",
          "author": "Benjamin Matuszewski",
          "version": "4.0.0-alpha.9",
-         "download_url": "https://forum.ircam.fr/projects/detail/spat/",
-         "git_repository_url": "https://github.com/collective-soundworks/soundworks/tags",
+         "download_url": "https://github.com/collective-soundworks/soundworks/tags",
+         "git_repository_url": "https://github.com/collective-soundworks/soundworks",
          "git_vendor": "github",
          "app_url": ""
       },
