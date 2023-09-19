@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.header">
     <router-link to="/" :class="$style.headerLink">
-      <img :class="$style.headerIcon" src="../../static/img/DAFNE_Icon.png" alt="icon" />
+      <img :class="$style.headerIcon" src="../../static/img/DAFNE_Logo_White_resized.png" alt="icon" />
       <h1 :class="$style.headerTitle">DAFNE+ Tools Catalogue</h1>
     </router-link>
   </div>

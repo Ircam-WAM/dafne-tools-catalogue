@@ -10,6 +10,8 @@
   top: 0;
   z-index: 9;
   background-color: #fbfbfb;
+  background: linear-gradient(90deg, rgba(172, 112, 207, 1) 0%, rgba(206, 70, 133, 1) 35%, rgba(175, 145, 231, 1) 100%);
+  color: #fff;
   box-shadow: 0 -20px 20px 15px #ffacff;
 }
 
@@ -21,7 +23,7 @@
 
 .headerIcon {
   width: 50px;
-  height: 50px;
+  height: 60px;
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -32,4 +34,10 @@
   margin-left: 1rem;
   margin-bottom: 0;
   text-decoration: none;
+  color: #fff;
+  transition: all 200ms;
+}
+
+.headerTitle:hover {
+  color: #ffcdff;
 }
