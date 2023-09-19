@@ -30,6 +30,7 @@
     "webpack-dev-server": "4.7.3"
   },
   "dependencies": {
+    "@gitbeaker/rest": "^39.15.0",
     "@octokit/rest": "^20.0.1",
     "dompurify": "^3.0.5",
     "js-base64": "^3.7.5",
