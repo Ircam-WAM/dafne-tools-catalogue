@@ -150,18 +150,25 @@
 
 /* Git */
 
+.toolGitRepositoryContentWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 85%;
+    min-width: 85%;
+    max-width: 85%;
+    margin: 0 auto;
+    position: relative;
+    left: 80px;
+}
+
 .toolGitRepositoryContent {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 auto;
     padding: 1rem;
-    width: 85%;
-    min-width: 85%;
-    max-width: 85%;
-    position: relative;
-    left: 80px;
     font-size: 20px;
 }
 
@@ -183,8 +190,9 @@
 
 .toolGitRepositoryContent section {
     display: flex;
+    flex-direction: column;
     padding: 1rem;
-    width: 45%;
+    width: 400px;
     border-left: 2px solid #7d36ff;
     border-right: 2px solid #7d36ff;
     border-bottom: 2px solid #7d36ff;
@@ -206,6 +214,20 @@
 
 .toolGitRepositoryContent section ul li {
     display: flex;
+}
+
+.toolGitRepositoryContributors ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.toolGitRepositoryContributors ul li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5rem;
+    border-radius: 10px;
 }
 
 .toolGitReadmeContainer {
