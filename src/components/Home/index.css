@@ -33,12 +33,13 @@ iframe {
     padding: 1rem;
     width: 100%;
     width: 20rem;
-    height: 30rem;
+    height: 32rem;
     position: relative;
-    background-color: #fdfdfd;
+    background-color: #0c0015;
     border-radius: 0;
     box-shadow: 0px 0px 5px 0px #d0d0d0;
     transition: all 200ms;
+    overflow: hidden;
 }
 
 .toolCard:hover {
@@ -51,14 +52,14 @@ iframe {
     display: flex;
     flex-direction: column;
     height: 100%;
-    color: #000 !important;
+    color: #fff !important;
 }
 
 .toolCardImage {
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     max-width: 15rem;
-    max-height: 4rem;
+    max-height: 6rem;
     margin: 0 auto;
     margin-top: 1rem;
     object-fit: contain;
@@ -67,12 +68,14 @@ iframe {
 .toolCardTitle {
     margin-top: 1rem;
     margin-bottom: 0;
+    margin-left: 0.5rem;
     font-size: 2rem;
 }
 
 .toolCardDescription {
     width: 100%;
     height: auto;
+    margin-left: 0.5rem;
     font-size: 1rem;
     line-height: 1.25rem;
 }
@@ -85,8 +88,9 @@ iframe {
     margin-bottom: 1rem;
     border: none;
     border-radius: 0;
-    background-color: #7d36ff;
+    background-color: #38009d;
     color: #fff;
+    box-shadow: 0px 1px 10px 2px #38009d;
     font-size: 1rem;
     font-weight: bold;
     appearance: none;
