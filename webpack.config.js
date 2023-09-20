@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { VueLoaderPlugin } = require("vue-loader");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 const src = path.resolve(__dirname, 'src');
@@ -38,6 +39,7 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin(),
       new VueLoaderPlugin(),
       new CleanWebpackPlugin(),
+      new Dotenv(),
       new ModuleFederationPlugin({
         name: 'vueapp',
         filename: 'remoteEntry.js',
