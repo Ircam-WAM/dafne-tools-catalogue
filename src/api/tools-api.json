@@ -40,7 +40,7 @@
          "author": "Jérôme Nika, Augustin Muller, Joakim Borg, Matthew Ostrowski",
          "version": "2.0.0",
          "download_url": "https://forum.ircam.fr/projects/detail/dicy2/",
-         "git_repository_url": "https://gitlab.com/gIIm/flow-reverb",
+         "git_repository_url": "https://git.forum.ircam.fr/jnika/dicy2",
          "git_vendor": "gitlab",
          "app_url": ""
       },
