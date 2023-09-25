@@ -192,8 +192,10 @@ onMounted(async () => {
             const repositoryApi = await repository.value.getRepositoryApi()
             console.log('REPOSITORY API: ', repositoryApi)
 
-            const repositoryInstance = await repository.value.getRepositoryInstance()
-            console.log('REPOSITORY INSTANCE: ', repositoryInstance)
+            if (selectedTool.value.git_vendor === 'github') {
+                const repositoryInstance = await repository.value.getRepositoryInstance()
+                console.log('REPOSITORY INSTANCE: ', repositoryInstance)
+            }
 
             gitRepositoryUser.value = await repository.value.getUser()
             console.log('USER: ', gitRepositoryUser.value)
