@@ -92,7 +92,7 @@ export class GithubRepository {
     // sanitize readme
     const readmeHtml = DOMPurify.sanitize(readme)
 
-    if (this.repositoryOwner && this.repositoryOwner) {
+    if (this.repositoryOwner && this.repositoryName) {
       // replace relative links by absolute links in HTML
       const opts = {
         vendor: 'github',
