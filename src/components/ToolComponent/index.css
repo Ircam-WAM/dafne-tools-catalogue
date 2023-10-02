@@ -286,15 +286,12 @@
 .toolGitReadme img {
     max-width: 50% !important;
     margin: 0 auto;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .toolGitReadme a svg {
     margin-right: 0.5rem;
     fill: #ff3c68;
     color: #ff3c68;
-}
-
-.toolGitReadme a img {
-    margin-bottom: 1rem;
 }
