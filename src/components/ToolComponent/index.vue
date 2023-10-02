@@ -68,13 +68,22 @@
                             </svg>
                             <b>Contributors: </b>
                         </div>
-                        <ul v-if="gitRepositoryContributors && gitRepositoryContributors.length > 0">
-                            <li v-for="contributor in gitRepositoryContributors">
-                                <a href='#'>
-                                    <img :src="contributor.avatar_url" />
-                                </a>
-                            </li>
-                        </ul>
+                        <template v-if="gitRepositoryContributors && gitRepositoryContributors.length > 0">
+                            <ul v-if="selectedTool.git_vendor === 'github'">
+                                <li v-for="contributor in gitRepositoryContributors">
+                                    <a :href="contributor.html_url">
+                                        <img :src="contributor.avatar_url" />
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul v-if="selectedTool.git_vendor === 'gitlab'">
+                                <li v-for="contributor in gitRepositoryContributors">
+                                    <a :href="contributor.web_url">
+                                        <img :src="contributor.avatar_url" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </template>
                     </section>
                 </div>
                 <div :class="$style.toolGitRepositoryContent">
