@@ -1,41 +1,49 @@
 {
   "tools_origin":[
       {
+         "uuid": "e40d114e-61e9-11ee-8c99-0242ac120002",
          "name": "WebPD",
          "api_url": "api/tools-api.json",
          "forum_api_url": "https://forum.ircam.fr/api/projects/731/"
       },
       {
+         "uuid": "ed417e94-61e9-11ee-8c99-0242ac120002",
          "name": "RAVE",
          "api_url": "api/tools-api.json",
          "forum_api_url": "https://forum.ircam.fr/api/projects/487/"
       },
       {
+         "uuid": "f17a6de0-61e9-11ee-8c99-0242ac120002",
          "name": "nn~",
          "api_url": "api/tools-api.json",
          "forum_api_url": "https://forum.ircam.fr/api/projects/492/"
       },
       {
+         "uuid": "f4c5023a-61e9-11ee-8c99-0242ac120002",
          "name": "Dicy2",
          "api_url": "api/tools-api.json",
          "forum_api_url": "https://forum.ircam.fr/api/projects/717/"
       },
       {
+         "uuid": "f78dd488-61e9-11ee-8c99-0242ac120002",
          "name": "Spat",
          "api_url": "api/tools-api.json",
          "forum_api_url": "https://forum.ircam.fr/api/projects/22/"
       },
       {
+         "uuid": "fb4c7c8c-61e9-11ee-8c99-0242ac120002",
          "name": "Soundworks",
          "api_url": "api/tools-api.json",
          "forum_api_url": "https://forum.ircam.fr/api/projects/604/"
       },
       {
+         "uuid": "fe0dbee0-61e9-11ee-8c99-0242ac120002",
          "name": "CoMo Elements",
          "api_url": "api/tools-api.json",
          "forum_api_url": "https://forum.ircam.fr/api/projects/20/"
       },
       {
+         "uuid": "0209bb3e-61ea-11ee-8c99-0242ac120002",
          "name": "Style Transfer",
          "api_url": "",
          "forum_api_url": ""
